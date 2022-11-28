@@ -47,7 +47,12 @@ public class Linha {
 	}
 
 	public String getLinha() {
-		return String.format("%10s | %3s | %20s | %20s | %12s | %17s", data, dia, historico, subHistorico, documento, valor);
+		return String.format("%10s | %3s | %20s | %12s | %17s",
+				data, dia, historico, documento, valor);
+	}
+	public String getLinhaSubHistorico() {
+		return String.format("%10s | %3s | %20s | %12s | %17s",
+				" ", " ", subHistorico, " ", " ");
 	}
 	
 	@Override
